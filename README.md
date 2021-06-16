@@ -96,6 +96,7 @@ To get a local copy up and running follow these steps.
 
 <!-- Application-Pictures -->
 ## Application Pictures
+![image](https://user-images.githubusercontent.com/72923818/122303620-7dad5200-cf0c-11eb-9e0a-1949e801a92b.png)
 
 
 
