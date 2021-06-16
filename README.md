@@ -66,6 +66,8 @@ To get a local copy up and running follow these steps.
    git clone https://github.com/Talkleingit/Remote-Joystick.git
    ```
 2. Run an android emulator
+ ```sh
+```
 3. Run this command in the terminal (in the project folder)
  ```sh
    flutter run --no-sound-null-safety
