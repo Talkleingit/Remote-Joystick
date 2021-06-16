@@ -19,7 +19,7 @@
       </ul>
     </li>
     <li><a href="#Features-And-Functionality">Features And Functionality</a></li>
-    <li><a href="#The design architectural pattern">The design architectural pattern</a></li>
+    <li><a href="#The-design-architectural-pattern">The design architectural pattern</a></li>
     <li><a href="#The-Client-Side">The Client Side</a></li>
     <li><a href="#The-Algorithm-Server">The Algorithm Server</a></li>
     <li><a href="#UML">UML</a></li>
