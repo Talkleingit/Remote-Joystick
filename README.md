@@ -92,7 +92,7 @@ The website is built with react. Each component has its own responsibility and t
 
 <!-- Application-Pictures -->
 ## Application Pictures
-![ApplicationPicture](https://user-images.githubusercontent.com/72923818/122300596-2f964f80-cf08-11eb-9213-15002ae22d2b.jpeg)
+
 
 
 
