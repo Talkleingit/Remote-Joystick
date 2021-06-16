@@ -74,7 +74,7 @@ To get a local copy up and running follow these steps.
 
 
 
-<!-- Architectural-pattern -->
+<!-- The-design-architectural-pattern -->
 ## The design architectural pattern
  MVVM 
  
