@@ -55,7 +55,7 @@ To get a local copy up and running follow these steps.
 ### Prerequisites
 
 * Emulator
-* Flutter sdk
+* Flutter sdk - https://flutter.dev/docs/get-started/install
   ```sh
   ```
 
@@ -65,9 +65,10 @@ To get a local copy up and running follow these steps.
    ```sh
    git clone https://github.com/Talkleingit/Remote-Joystick.git
    ```
-2. Flutter
+2. Run an android emulator
+3. Run this command in the terminal (in the project folder)
  ```sh
-   https://flutter.dev/docs/get-started/install
+   flutter run --no-sound-null-safety
 ```
    
 
