@@ -23,6 +23,7 @@
     <li><a href="#Features-And-Functionality">Features And Functionality</a></li>
     <li><a href="#The-design-architectural-pattern">The design architectural pattern</a></li>
     <li><a href="#UML">UML</a></li>
+    <li><a href="#Application-Pictures">Application-Pictures</a></li>
     <li><a href="#User-Stories-Video">User Stories Video</a></li>
   </ol>
 </details>
@@ -88,8 +89,8 @@ The website is built with react. Each component has its own responsibility and t
 ## UML
 
 
-
-
+<!-- Application-Pictures -->
+## Application Pictures
 
 
 
