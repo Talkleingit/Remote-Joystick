@@ -90,7 +90,7 @@ The website is built with react. Each component has its own responsibility and t
 
 
 
-![UML](https://user-images.githubusercontent.com/72923818/119130472-f79f0800-ba40-11eb-81e2-4ddcb06713fc.jpg)
+
 
 
 
@@ -99,7 +99,7 @@ The website is built with react. Each component has its own responsibility and t
 <!-- User-Stories-Video -->
 ## User Stories Video
 
-https://github.com/or-gottman/AnomalyDetectionWebApp/blob/master/DEMO.mp4
+
 
 
 
