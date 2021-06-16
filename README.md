@@ -68,9 +68,10 @@ To get a local copy up and running follow these steps.
 2. Run an android emulator
  ```sh
 ```
-3. Run this command in the terminal (in the project folder)
+3. Run these commands in the terminal (in the project folder)
  ```sh
-   flutter run --no-sound-null-safety
+   $ flutter packages get
+   $ flutter run --no-sound-null-safety
 ```
    
 
