@@ -83,15 +83,6 @@ To get a local copy up and running follow these steps.
 
 The website is built with react. Each component has its own responsibility and thus we've kept OOP principles throughout the project. The site is built in way that with each render of the site the model's status updates (if a model was trained previously, its status would be pending and after the next rendering of the site it will change to ready). In addition, each request from the user is translated into an API request for the API server. The client processes the input csv files given by the user (a train file or a file with possible anomalies) and parses them into useable data for the API and sends the data to the server. Once the results from the API server return the client presents them to the user graphically. If any anomalies were found the user can observe them in the graph (they are colored in red) and the lines in the table that are lines that were stated in the spans are colored in red as well. Moreover, any request or update is followed by a notification in order to keep the user informed of any change in the data.  
 <!-- The Algorithm Server -->
-## The Algorithm Server
-
-This server detects anomalies with two different algorithms. The server receives CSV files both for the learning part and the detection part.
-The algo server contains a few parts:
-Server- receives and sends data from and to clients that has connected with the program.
-Algo- the algorithms find, based on the ‘train’ CSV, the correlation between the CSV features and calculate the anomalies points bases on the ‘test’ CSV. The data is received and the ‘learn normal’ finds the correlated features in the CSV, each correlated feature is saved. The ‘detect’ finds the points in the ‘train’ CSV that are not suited for the correlation that was found during the ‘learn’.
-The anomaly points are saved, and the client can ask for both list of the points or span of them. The span is calculated that points that are closed together will be featured as one.
-In this project there are two algorithms that find the correlation and find anomalies. The first algorithm is a line regression algorithm and the second is a Hybrid algorithm. Both algorithms can be used.
-The data that is received is in CSV format, the Parser extracts the relevant data from the file and saves it for further use by the algorithms.
 
 <!-- UML -->
 ## UML
