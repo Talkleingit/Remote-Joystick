@@ -63,8 +63,10 @@ To get a local copy up and running follow these steps.
    ```sh
    git clone https://github.com/Talkleingit/Remote-Joystick.git
    ```
-2. https://flutter.dev/docs/get-started/install
-
+2. Flutter
+ ```sh
+   https://flutter.dev/docs/get-started/install
+```
    
    ```
 
