@@ -3,19 +3,28 @@ import 'package:executor/executor.dart';
 
 class JoystickModel {
   final Executor executor = Executor(concurrency: 1); // the task executor
-  late final Socket socket; // flight gear socket
+  late Socket socket; // flight gear socket
+  bool isConnected = false;
 
   /*
    *  This function connects to the flight gear over a web socket channel using 
    *  the given ip and port.
   */
-  void connect(String host, int port) async {
-    this.socket = await Socket.connect(host, port);
+  Future<bool> connect(String host, int port) async {
+    try {
+      this.socket =
+          await Socket.connect(host, port, timeout: Duration(seconds: 1));
+      isConnected = true;
+      return true;
+    } on SocketException {
+      isConnected = false;
+      return false;
+    }
   }
 
   /*
    *  This function is in charge of sending the message to the flight gear in 
-   *  a different thread. 
+   *  a task in the pool thread (done by executor) 
    */
 
   void send(String message) {
@@ -59,7 +68,11 @@ class JoystickModel {
    */
   void terminate() {
     this.executor.join(withWaiting: true); // await all threads to end tasks
-    this.socket.close(); // closes the socket
+    this.socket.flush();
+    this.socket.close();
+  }
+
+  void closePool() {
     this.executor.close(); // closes the executor.
   }
 }

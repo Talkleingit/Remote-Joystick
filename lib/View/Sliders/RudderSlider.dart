@@ -12,20 +12,19 @@ class RudderSliderState extends State<RudderSlider> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 10),
+      margin: EdgeInsets.only(top: 20),
       child: SliderTheme(
         data: SliderTheme.of(context).copyWith(
-          activeTrackColor: Colors.red.shade700,
-          inactiveTrackColor: Colors.red[100],
+          inactiveTrackColor: Colors.deepPurple[100],
           trackShape: RoundedRectSliderTrackShape(),
           trackHeight: 4.0,
           thumbShape: RoundSliderThumbShape(enabledThumbRadius: 12.0),
           thumbColor: Colors.redAccent,
-          overlayColor: Colors.red.withAlpha(32),
+          overlayColor: Colors.deepPurple.withAlpha(32),
           overlayShape: RoundSliderOverlayShape(overlayRadius: 28.0),
           tickMarkShape: RoundSliderTickMarkShape(),
-          activeTickMarkColor: Colors.red[700],
-          inactiveTickMarkColor: Colors.red[100],
+          activeTickMarkColor: Colors.deepPurple[700],
+          inactiveTickMarkColor: Colors.deepPurple[100],
           valueIndicatorShape: PaddleSliderValueIndicatorShape(),
           valueIndicatorColor: Colors.redAccent,
           valueIndicatorTextStyle: TextStyle(
@@ -44,7 +43,7 @@ class RudderSliderState extends State<RudderSlider> {
             });
             widget.updateRudder(rudderVal);
           },
-          activeColor: Colors.blue.shade600,
+          activeColor: Colors.deepPurple.shade600,
         ),
       ),
     );

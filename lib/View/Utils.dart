@@ -1,3 +1,4 @@
+import 'package:flight_simulator_joystick/ViewModel/JoystickViewModel.dart';
 import 'package:vector_math/vector_math.dart' as vectors;
 import 'dart:math' as math;
 
@@ -8,22 +9,30 @@ class AileronUtil {
    */
   static double determineAngle(double angle) {
     if (angle >= 0.0 && angle <= 90.0) {
+      // first quarter case
       return 90.0 - angle;
     } else if (angle > 90 && angle <= 180) {
-      return angle - 90.0; // 90 - (angle - 90)
+      // second quarter case
+      return angle - 90.0; // rearanged expression: 90 - (angle - 90)
     } else if (angle > 180 && angle <= 270) {
-      return 270.0 - angle; // 90 - (angle - 90)
+      // third quarter case
+      return 270.0 - angle; // rearanged expression: 90 - (angle - 180)
     }
+    // fourth quarter case
     return angle - 270.0;
   }
 
   /*
-   *  This function determines the sign of the direction according to the angle.
+   *  This function determines the needed sign (of the x values) 
+   *  according to the angle.
    */
   static int determineSign(double angle) {
     return (angle >= 0 && angle <= 180) ? 1 : -1;
   }
 
+  /*
+   *  given the angle and distance the function calculates the aileron.
+   */
   static calculate(double angle, double distance) {
     return AileronUtil.determineSign(angle) *
         distance *
@@ -31,50 +40,41 @@ class AileronUtil {
   }
 }
 
-enum Quarter { first, second, third, fourth }
-
 class ElevatorUtil {
+  /*
+   *  This function checks from which quarter the angle was given and corrects
+   *  the angle accordingly.   
+   */
   static double determineAngle(double angle) {
     if (angle >= 0 && angle <= 90) {
+      //first quarter
       return angle;
     } else if (angle > 90 && angle <= 180) {
+      //second quarter
       return 180.0 - angle;
     } else if (angle > 180 && angle <= 270) {
+      //third quarter
       return angle - 180.0;
     }
-    return angle - 270.0;
+    //fourth quarter
+    return 360.0 - angle; // expression simplified: 90 - (angle - 270.0)
   }
 
-  static Quarter determineQuarter(double angle) {
-    if (angle >= 0 && angle <= 90) {
-      return Quarter.first;
-    } else if (angle > 90 && angle <= 180) {
-      return Quarter.second;
-    } else if (angle > 180 && angle <= 270) {
-      return Quarter.third;
-    }
-    return Quarter.fourth;
-  }
-
+  /*
+   *  This function determines the needed sign (of the y values) 
+   *  according to the angle.   
+   */
   static int determineSign(double angle) {
     return (angle > 90 && angle < 270) ? -1 : 1;
   }
 
+  /*
+   *  Given the angle and distance from the center of the circle, this 
+   *  function calculates the elevator value. 
+   */
   static double calculate(double angle, double distance) {
-    switch (determineQuarter(angle)) {
-      case Quarter.fourth:
-        return ElevatorUtil.determineSign(angle) *
-            distance *
-            math.sin(vectors.radians(ElevatorUtil.determineAngle(angle)));
-      default:
-        return ElevatorUtil.determineSign(angle) *
-            distance *
-            math.cos(vectors.radians(ElevatorUtil.determineAngle(angle)));
-    }
+    return ElevatorUtil.determineSign(angle) *
+        distance *
+        math.cos(vectors.radians(ElevatorUtil.determineAngle(angle)));
   }
 }
-
-/*
-*
-
-                        */

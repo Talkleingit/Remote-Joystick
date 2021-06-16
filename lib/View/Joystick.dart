@@ -13,7 +13,7 @@ class JoystickState extends State<Joystick> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 150, right: 20),
+      margin: EdgeInsets.only(top: 110, right: 20),
       child: JoystickView(
         size: 270,
         backgroundColor: Colors.black26,

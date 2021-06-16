@@ -1,7 +1,7 @@
 import "package:flutter/material.dart";
 
 class PortTextField extends StatefulWidget {
-  final Function(String) onSubmitLogic;
+  late final Function(String) onSubmitLogic;
   PortTextField(this.onSubmitLogic);
   @override
   PortTextFieldState createState() => PortTextFieldState();

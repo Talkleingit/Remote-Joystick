@@ -3,6 +3,7 @@ import "package:flutter/material.dart";
 class IpTextField extends StatefulWidget {
   final Function(String) onSubmitLogic;
   IpTextField(this.onSubmitLogic);
+
   @override
   IpTextFieldState createState() => IpTextFieldState();
 }

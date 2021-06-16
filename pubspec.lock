@@ -102,6 +102,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  fmvvm:
+    dependency: "direct main"
+    description:
+      name: fmvvm
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.9.7"
   http_parser:
     dependency: transitive
     description:

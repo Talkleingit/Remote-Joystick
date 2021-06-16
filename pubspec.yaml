@@ -33,6 +33,8 @@ dependencies:
   executor: ^2.2.2
   web_socket_channel: ^2.1.0
   vector_math: any
+  fmvvm: ^0.9.5
+
 
 
 
