@@ -52,9 +52,9 @@ To get a local copy up and running follow these steps.
 
 ### Prerequisites
 
-* npm
+* Emulator
+* Flutter sdk
   ```sh
-  npm install npm@latest -g
   ```
 
 ### Installation
