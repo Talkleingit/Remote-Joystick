@@ -68,38 +68,24 @@ To get a local copy up and running follow these steps.
    https://flutter.dev/docs/get-started/install
 ```
    
-   ```
 
 <!-- Features-And-Functionality -->
 ## Features And Functionality
 
 
-Firstly, the user uploads a csv file to be trained and also specifies which type of algorithm (hybrid/regression) needs to be used by the 
-algorithm server. After the train file is uploaded the user is presented with a notice that a new model has been created, and the time of creation
-is also specified. At this point, the csv file's data is presented visually in a graph to the user. The user is able to select a feature, in a drop-down menu, and the relevant data will be presented on the graph - in which the Y axis contains values of the selected feature, and the X axis is time.
-The user can then upload yet another file containing possible anomalies. The data is processed by the API and passed
-to the algorithm server for anomaly detection. When the detection is done the algorithm server sends back a message that contains a list of spans for each 2 correlated features.
-The spans are in the format of [start,end] where start is the first line and end is the line after the last line in which the anomalies were found. This list of lines
-is passed to the client side to be presented to the user. Moreover, the information concerning the anomalies is presented graphically in the website. At this point, the user is able to select a feature in the drop-down menu, and the graph will get updated - the X axis will represent the selected feature's values, and the Y axis will represent values of the selected feature's most correlated feature. The points which are considered anomalies will be colored in red, and the user has the option to show or hide them and the regular points.
 
 
 
 
 
-![pending](https://user-images.githubusercontent.com/72923818/119162286-dc44f480-ba62-11eb-9575-d7b7b24a1648.jpg)
 
-![tooltip](https://user-images.githubusercontent.com/72923818/119162510-21692680-ba63-11eb-8421-9ad289961e8b.jpg)
+
 
 
 <!-- The-API -->
-## The API
-
-* POST api/model  - This path expects a query parameter containing the model type and the data in the body. The data sent in the body is trained by the algorithm server. After that a new model is created that contains a unique ID for this model, the exact time the model was created, the type of algorithm that the model was trained with, and the features that were trained.
-* GET api/model   - This path expects a query parameter containing the unique model ID. It sends back the trained model saved in the database.  
-* DELETE api/model  - This path expects a query parameter containing the unique model ID. It deletes the model from the database.
-* GET api/models  - This path sends all the models that were trained and saved in the database. 
-* POST api/anomaly   - This path expects a query parameter containing the unique model ID and the data in the body. The data given in the body is sent to the algorithm server for anomaly detection. It sends back the spans calculated by the algorithm.
-
+## The project design structure:
+ MVVM 
+ 
 <!-- UML -->
 ## The Client Side
 
