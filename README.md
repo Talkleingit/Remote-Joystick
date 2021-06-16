@@ -86,7 +86,7 @@ To get a local copy up and running follow these steps.
 <!-- UML -->
 ## The Client Side
 
-The website is built with react. Each component has its own responsibility and thus we've kept OOP principles throughout the project. The site is built in way that with each render of the site the model's status updates (if a model was trained previously, its status would be pending and after the next rendering of the site it will change to ready). In addition, each request from the user is translated into an API request for the API server. The client processes the input csv files given by the user (a train file or a file with possible anomalies) and parses them into useable data for the API and sends the data to the server. Once the results from the API server return the client presents them to the user graphically. If any anomalies were found the user can observe them in the graph (they are colored in red) and the lines in the table that are lines that were stated in the spans are colored in red as well. Moreover, any request or update is followed by a notification in order to keep the user informed of any change in the data.  
+ 
 <!-- The Algorithm Server -->
 
 <!-- UML -->
