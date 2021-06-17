@@ -86,14 +86,14 @@ To get a local copy up and running follow these steps.
  ### 2. View:
   This directory contains all the view files. In the directory each main widget that is used in the application is defined in a separate file (there are 2 sub directories in
   this directory for the sliders (throttle slider, rudder slider) and for the text fields. Moreover, there is a Joystick.dart file for the joystick used in the application. 
-  The joystick is not dependent on the ViewModel or any other file in the project for that matter, instead it is a stand alone component that can be easily integrated into 
+  The joystick is not dependent on the ViewModel or any other file in the project for that matter. Instead it is a stand alone component that can be easily integrated into 
   another project. The joystick contains a callable property named onChangeLogic, in runtime this property is initialized with any callable object that accepts 2 double 
   parameters. In this project the callable object given at runtime commands the ViewModel to update the rudder and elevation parameters.
   ### 3. ViewModel:
-  This directory contains the ViewModel.dart file. The ViewModel is in charge of sending commands to the Model whenever the view is changed. Meaning, for example if the user 
+  This directory contains the ViewModel.dart file. The ViewModel is in charge of sending commands to the Model whenever the view is changed. Meaning, for example, if the user 
   moved the joystick, the onChangedLogic function in the joystick (injected at runtime) will command the ViewModel to set the new rudder and elevator values, and thus the 
-  ViewModel will command the Model to send the new values to the Flight gear. With this sort of methodolgy we've maintained a clear seperation between the View and Model. The 
-  chain events start at the view continues to the ViewModel and ends at the Model.
+  ViewModel will command the Model to send the new values to the Flight gear. With this sort of methodology we have maintained a clear separation between the View and Model. The 
+  chain events start at the view, continue to the ViewModel and end at the Model.
   
 
 <!-- UML -->
