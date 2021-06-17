@@ -50,7 +50,7 @@ can connect to the Flight gear application and control the planes' joystick and 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these steps.
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
