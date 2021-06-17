@@ -97,7 +97,7 @@ To get a local copy up and running follow these steps.
   This directory contains the ViewModel.dart file. The ViewModel is in charge of sending commands to the Model whenever the view is changed. Meaning, for example if the user 
   moved the joystick, the onChangedLogic function in the joystick (injected at runtime) will command the ViewModel to set the new rudder and elevator values, and thus the 
   ViewModel will command the Model to send the new values to the Flight gear. With this sort of methodolgy we've maintained a clear seperation between the View and Model. The 
-  chain event starts at the view continues to the ViewModel and ends at the Model.
+  chain events start at the view continues to the ViewModel and ends at the Model.
   
 
 <!-- UML -->
