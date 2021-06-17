@@ -21,7 +21,6 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#Features-And-Functionality">Features And Functionality</a></li>
     <li><a href="#The-design-architectural-pattern">The design architectural pattern</a></li>
     <li><a href="#UML">UML</a></li>
     <li><a href="#Application-Pictures">Application-Pictures</a></li>
@@ -77,11 +76,6 @@ To get a local copy up and running follow these steps.
    $ flutter run --no-sound-null-safety
 ```
    
-
-<!-- Features-And-Functionality -->
-## Features And Functionality
-
-
 
 <!-- The-design-architectural-pattern -->
 ## The design architectural pattern
