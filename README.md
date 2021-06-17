@@ -98,6 +98,7 @@ To get a local copy up and running, follow these steps.
 
 <!-- UML -->
 ## UML
+![Untitled Diagram (1)](https://user-images.githubusercontent.com/72923818/122423424-95311d00-cf96-11eb-9e46-18a343017cf4.jpg)
 
 
 <!-- Application-Pictures -->
