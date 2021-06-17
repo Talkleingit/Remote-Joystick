@@ -66,10 +66,10 @@ To get a local copy up and running follow these steps.
    git clone https://github.com/Talkleingit/Remote-Joystick.git
    ```
 2. Run an android emulator
- ```sh
-```
 3. Run the flight gear application, in the settings at the additional settings section insert:
-```sh  --telnet=socket,in,10,127.0.0.1,6400,tcp ```
+```sh  
+--telnet=socket,in,10,127.0.0.1,6400,tcp 
+```
 4. Press the fly button in the flight gear application
 4. Run these commands in the terminal (in the project folder)
  ```sh
