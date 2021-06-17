@@ -1,6 +1,6 @@
 
 <!-- Title -->
-## Remote joystick for Flight gear simulator
+## Remote joystick for the Flight gear simulator
 
 
 
