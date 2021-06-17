@@ -82,7 +82,7 @@ To get a local copy up and running follow these steps.
  The architectural design pattern used in this project is the MVVM design. In the lib directory there are 3 sub-directories: 
  ### 1. Model:
   This directory contains the Model.dart file which contains the business logic. The model is in charge of connecting over a socket using an IP and port to the Flight gear
-  app. The connection to the Flight gear is done through a thread pool, meaning each time the model sends data to the Flight gear application the thread pool schedules the same   task that executed the last task and thus there is no need to create a new isolation each time. Moreover, the model sends the correct messages to the Flight gear according to   the Api Flight gear provided.  
+  app. The connection to the Flight gear is done through a thread pool, meaning each time the model sends data to the Flight gear application the thread pool schedules the same   task that executed the last task and thus there is no need to create a new isolation each time. Moreover, the model sends the correct messages to the Flight gear according to   the API Flight gear provided.  
  ### 2. View:
   This directory contains all the view files. In the directory each main widget that is used in the application is defined in a seperate file (there are 2 sub directories in
   this directory for the sliders (throttle slider, rudder slider) and for the text fields. Moreover, there is a Joystick.dart file for the joystick used in the application. 
