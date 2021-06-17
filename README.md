@@ -23,7 +23,7 @@
     </li>
     <li><a href="#The-design-architectural-pattern">The design architectural pattern</a></li>
     <li><a href="#UML">UML</a></li>
-    <li><a href="#Pictures-of-the-application">Pictures of the application</a></li>
+    <li><a href="#Picture-of-the-application">Picture of the application</a></li>
     <li><a href="#User-Stories-Video">User Stories Video</a></li>
   </ol>
 </details>
@@ -102,8 +102,8 @@ To get a local copy up and running, follow these steps.
 
 
 
-<!-- Pictures-of-the-application -->
-## Pictures of the application
+<!-- Picture-of-the-application -->
+## Picture of the application
 ![image](https://user-images.githubusercontent.com/72923818/122303620-7dad5200-cf0c-11eb-9e0a-1949e801a92b.png)
 
 
