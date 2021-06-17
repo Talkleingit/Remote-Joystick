@@ -99,12 +99,6 @@ To get a local copy up and running follow these steps.
   ViewModel will command the Model to send the new values to the Flight gear. With this sort of methodolgy we've maintained a clear seperation between the View and Model. The 
   chain event starts at the view continues to the ViewModel and ends at the Model.
   
- 
-<!-- UML -->
-## The Client Side
-
- 
-<!-- The Algorithm Server -->
 
 <!-- UML -->
 ## UML
