@@ -83,7 +83,12 @@ To get a local copy up and running follow these steps.
 
 <!-- The-design-architectural-pattern -->
 ## The design architectural pattern
- MVVM 
+ The architectural design pattern used in this project is the MVVM design. In the lib directory there are 3 sub-directories: 
+ 1. Model:
+ ```sh
+  This directory contains the Model.dart file which contains the business logic. The model is in charge of connecting over a socket using an IP and port to the Flight gear
+  app.
+  ```
  
 <!-- UML -->
 ## The Client Side
