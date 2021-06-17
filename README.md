@@ -57,8 +57,7 @@ To get a local copy up and running follow these steps.
 
 * Emulator
 * Flutter sdk - https://flutter.dev/docs/get-started/install
-  ```sh
-  ```
+* Flight gear simulator - https://www.flightgear.org/download/
 
 ### Installation
 
@@ -69,6 +68,7 @@ To get a local copy up and running follow these steps.
 2. Run an android emulator
  ```sh
 ```
+3. Run the flight gear application, in the settings at the additional settings section insert this line: --telnet=socket,in,10,127.0.0.1,6400,tcp and then press fly. 
 3. Run these commands in the terminal (in the project folder)
  ```sh
    $ flutter packages get
