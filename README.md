@@ -88,7 +88,7 @@ To get a local copy up and running follow these steps.
   This directory contains the Model.dart file which contains the business logic. The model is in charge of connecting over a socket using an IP and port to the Flight gear
   app. The connection to the Flight gear is done through a thread pool, meaning each time the model sends data to the Flight gear application the thread pool schedules the same   task that executed the last task and thus there is no need to create a new isolation each time. Moreover, the model sends the correct messages to the Flight gear according to   the Api Flight gear provided.  
  ### 2. View:
-  This directory contains all the view files. In the directory each main widget that is used in the application is defined in a seperate file (there are 2 sub directories in  
+  This directory contains all the view files. In the directory each main widget that is used in the application is defined in a seperate file (there are 2 sub directories in
   this directory for the sliders (throttle slider, rudder slider) and for the text fields. Moreover, there is a Joystick.dart file for the joystick used in the application. The   joystick has no dependency on the ViewModel or any other file in the project for that matter, instead it is a stand alone component that can be easily integrated into another   project. The joystick contains a callable property named onChangeLogic, in runtime the this property is initialized with any callable object that accepts 2 double parameters.
   In this project in runtime the function given as the onChangeLogic commands the ViewModel to update the rudder and elevation parameters.
   ### 3. ViewModel:
