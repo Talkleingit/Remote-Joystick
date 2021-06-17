@@ -92,7 +92,7 @@ To get a local copy up and running follow these steps.
   this directory for the sliders (throttle slider, rudder slider) and for the text fields. Moreover, there is a Joystick.dart file for the joystick used in the application. 
   The joystick is not dependent on the ViewModel or any other file in the project for that matter, instead it is a stand alone component that can be easily integrated into 
   another project. The joystick contains a callable property named onChangeLogic, in runtime this property is initialized with any callable object that accepts 2 double 
-  parameters. In this project the callable object given at runtime as the onChangeLogic property commands the ViewModel to update the rudder and elevation parameters.
+  parameters. In this project the callable object given at runtime commands the ViewModel to update the rudder and elevation parameters.
   ### 3. ViewModel:
   This directory contains the ViewModel.dart file. The ViewModel is in charge of sending commands to the Model whenever the view is changed. Meaning, for example if the user 
   moved the joystick, the onChangedLogic function in the joystick (injected at runtime) will command the ViewModel to set the new rudder and elevator values, and thus the 
