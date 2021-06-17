@@ -90,7 +90,7 @@ To get a local copy up and running follow these steps.
  ### 2. View:
   This directory contains all the view files. In the directory each main widget that is used in the application is defined in a seperate file (there are 2 sub directories in
   this directory for the sliders (throttle slider, rudder slider) and for the text fields. Moreover, there is a Joystick.dart file for the joystick used in the application. 
-  The joystick is not dependent on the ViewModel or any other file in the project for that matter, instead it is a stand alone component that can be easily integrated into  
+  The joystick is not dependent on the ViewModel or any other file in the project for that matter, instead it is a stand alone component that can be easily integrated into 
   another project. The joystick contains a callable property named onChangeLogic, in runtime this property is initialized with any callable object that accepts 2 double 
   parameters. In this project the callable object given at runtime as the onChangeLogic property commands the ViewModel to update the rudder and elevation parameters.
   ### 3. ViewModel:
