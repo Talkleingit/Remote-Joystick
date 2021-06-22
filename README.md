@@ -33,7 +33,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 This is an android application project written entirely in dart with the use of flutter. The project provides a friendly to use android application in which the user
-can connect to the Flight gear application and control the planes' joystick and speed.
+can connect to the Flight gear application and control the plane's joystick and speed.
 
 
 
