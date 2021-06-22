@@ -24,7 +24,7 @@
     <li><a href="#The-design-architectural-pattern">The design architectural pattern</a></li>
     <li><a href="#UML">UML</a></li>
     <li><a href="#Picture-of-the-application">Picture of the application</a></li>
-    <li><a href="#User-Stories-Video">User Stories Video</a></li>
+  
   </ol>
 </details>
 
@@ -109,9 +109,6 @@ To get a local copy up and running, follow these steps.
 
 
 
-
-<!-- User-Stories-Video -->
-## User Stories Video
 
 
 
